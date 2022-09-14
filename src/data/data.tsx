@@ -9,13 +9,13 @@ import {
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
+//import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+//import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -25,7 +25,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  //TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -33,14 +33,14 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Tim Baker',
+  title: 'Dominik Heyer',
   description: ``,
   ogImageUrl: ``,
-  twitterCardType: 'summary_large',
-  twitterSite: `@timbakerx`,
-  twitterCreator: `@timbakerx`,
-  twitterDomain: `reactresume.com`,
-  twitterUrl: `https://reactresume.com`,
+  //twitterCardType: 'summary_large',
+  //twitterSite: `@timbakerx`,
+  //twitterCreator: `@timbakerx`,
+  //twitterDomain: `reactresume.com`,
+  //twitterUrl: `https://reactresume.com`,
 };
 
 /**
@@ -54,7 +54,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  //Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -64,28 +64,32 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: 'Hey there, I\'m Dominik Heyer.',
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a <strong className="text-stone-100">dual student</strong>, currently studying <strong className="text-stone-100"> IT and Business</strong> at the 
+        <strong className="text-stone-100"> IU Dortmund</strong>, while working
+        at <a href="https://addi.de/">Selter</a> where I analyse and restructure production and administration processes,
+        and have worked on projects ranging from developing RaspberryPi based hardware solutions for production control,
+        to designing an algorithm for batch and container size selection regarding production bottlenecks and storage optimization.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my spare time you can catch me developing the most niche Web Applications like the <a href="https://mhbuildpawcessor.com/">Pawcessor</a>,
+        playing <strong className="text-stone-100">Guitar</strong>, or exploring the <strong className="text-stone-100">JavaScript Frontend Framework</strong> of the week.
+        And if there's still time, I'll probably prepare the next <strong className="text-stone-100">DnD session</strong> for my wife and friends.
       </p>
     </>
   ),
   actions: [
+    /*
     {
       href: '/assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
     },
+    */
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
@@ -103,12 +107,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Altena, Germany', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'German', Icon: FlagIcon},
+    {label: 'Interests', text: 'Traveling, Learning, Literature, DnD, Guitar', Icon: SparklesIcon},
+    {label: 'Study', text: 'IU Dortmund', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Selter GmbH & co. KG', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -120,33 +124,29 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'German',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+        name: 'English',
+        level: 10,
+      }
     ],
   },
   {
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 9,
+        name: 'Vue',
+        level: 8,
       },
       {
-        name: 'Typescript',
+        name: 'Javascript',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'React',
+        level: 4,
       },
     ],
   },
@@ -155,32 +155,36 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
+        level: 7,
       },
       {
-        name: 'Rust',
+        name: 'Express',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Document Databases',
         level: 4,
       },
+      {
+        name: 'Relational Databases',
+        level: 3,
+      }
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Others',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
+        name: 'Python/Pandas',
         level: 4,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Webscraper - Cheerio',
+        level: 5,
+      },
+      {
+        name: 'Java / Swing',
+        level: 6,
       },
     ],
   },
@@ -191,11 +195,17 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Pawcessor',
+    description: 'Build optimization tool for Monster Hunter Rise by Capcom.',
+    url: 'https://mhbuildpawcessor.com',
     imageUrl: 'https://source.unsplash.com/collection/51517718/',
   },
+  {
+    title: 'Pawcessor',
+    description: 'Build optimization tool for Monster Hunter Rise by Capcom.',
+    url: 'https://mhbuildpawcessor.com',
+    imageUrl: 'https://source.unsplash.com/collection/51517718/',
+  }
 ];
 
 /**
@@ -203,28 +213,30 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2013',
+    location: 'Albrecht Dürer Gymnasium',
+    title: 'Higher School Certificate',
+    content: <p></p>,
   },
   {
     date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    location: 'Ruhr-Universität Bochum',
+    title: 'The Curious Years',
+    content: <p>After going abroad I came back with specific ideas about my plans for the future, but life, as it does, threw me for a loop once or twice. <br />
+      In this period I took classes in Physics, Chemistry and Biology, deepening my love for the scientific thought process, but ultimately failing to find my calling.
+      First contact to the world of software engineering was made here, while writing first Python Scripts for data evaluation.
+    </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2020 - Present',
+    location: 'International University - Selter GmbH & co. KG',
+    title: 'Business & Information Technology - System Administrator',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        From a student job at Selter, where I was supposed to support production management, but , I got offered the opportunity to dually study Business & Information Technology
       </p>
     ),
   },
@@ -244,6 +256,7 @@ export const experience: TimelineItem[] = [
 /**
  * Testimonial section
  */
+/*
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
@@ -264,34 +277,37 @@ export const testimonial: TestimonialSection = {
     },
   ],
 };
+*/
 
 /**
  * Contact section
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Contact',
+  description: 'You can reach me here. Normally I`ll get back to you in 1-2 days.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'pawcessor@gmail.com',
+      href: 'mailto:pawcessor@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Altena, Germany',
+      href: 'https://goo.gl/maps/PATKDx912uT6vwko9',
     },
+    /*
     {
       type: ContactType.Instagram,
       text: '@tbakerx',
       href: 'https://www.instagram.com/tbakerx/',
     },
+    */
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Gepolter',
+      href: 'https://github.com/Gepolter',
     },
   ],
 };
@@ -301,8 +317,10 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/18409013/dominik-heyer'},
+  /*
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  */
 ];

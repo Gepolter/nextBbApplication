@@ -10,11 +10,7 @@ import Section from '../Layout/Section';
 
 const Portfolio: FC = memo(() => {
   // Array of test items, replace this with 'portfolioItems' from data/data.ts
-  const testPortfolioItems: PortfolioItem[] = [
-    ...Array(10).fill({
-      ...portfolioItems[0],
-    }),
-  ].map((item, idx) => {
+  portfolioItems.map((item, idx) => {
     const {imageUrl, ...rest} = item;
     // Simply a seed value for unsplash random image
     return {imageUrl: `${imageUrl}?sig=${idx}`, ...rest};
@@ -25,7 +21,7 @@ const Portfolio: FC = memo(() => {
       <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-          {testPortfolioItems.map((item, index) => {
+          {portfolioItems.map((item, index) => {
             const {title, imageUrl} = item;
             return (
               <div className="pb-6" key={`${title}-${index}`}>
