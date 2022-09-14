@@ -1,7 +1,7 @@
 import {
   AcademicCapIcon,
   CalendarIcon,
-  DownloadIcon,
+  //DownloadIcon,
   FlagIcon,
   MapIcon,
   OfficeBuildingIcon,
@@ -76,7 +76,7 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my spare time you can catch me developing the most niche Web Applications like the <a href="https://mhbuildpawcessor.com/">Pawcessor</a>,
-        playing <strong className="text-stone-100">Guitar</strong>, or exploring the <strong className="text-stone-100">JavaScript Frontend Framework</strong> of the week.
+        playing <strong className="text-stone-100">Guitar</strong>, or exploring the new <strong className="text-stone-100">JavaScript Frontend Framework</strong> of the week.
         And if there's still time, I'll probably prepare the next <strong className="text-stone-100">DnD session</strong> for my wife and friends.
       </p>
     </>
@@ -103,9 +103,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: ``,
   aboutItems: [
     {label: 'Location', text: 'Altena, Germany', Icon: MapIcon},
     {label: 'Age', text: '27', Icon: CalendarIcon},
@@ -141,12 +139,8 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'Javascript',
-        level: 7,
-      },
-      {
         name: 'React',
-        level: 4,
+        level: 5,
       },
     ],
   },
@@ -155,18 +149,18 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 7,
-      },
-      {
-        name: 'Express',
         level: 5,
       },
       {
-        name: 'Document Databases',
+        name: 'Express',
+        level: 6,
+      },
+      {
+        name: 'Mongo DB',
         level: 4,
       },
       {
-        name: 'Relational Databases',
+        name: 'MySQL',
         level: 3,
       }
     ],
@@ -175,16 +169,16 @@ export const skills: SkillGroup[] = [
     name: 'Others',
     skills: [
       {
-        name: 'Python/Pandas',
-        level: 4,
-      },
-      {
         name: 'Webscraper - Cheerio',
         level: 5,
       },
       {
+        name: 'Python/Pandas',
+        level: 4,
+      },
+      {
         name: 'Java / Swing',
-        level: 6,
+        level: 7,
       },
     ],
   },
@@ -219,12 +213,12 @@ export const education: TimelineItem[] = [
     content: <p></p>,
   },
   {
-    date: 'March 2003',
+    date: 'September 2014 - June 2020',
     location: 'Ruhr-Universität Bochum',
-    title: 'The Curious Years',
-    content: <p>After going abroad I came back with specific ideas about my plans for the future, but life, as it does, threw me for a loop once or twice. <br />
+    title: 'The Curiousity Years',
+    content: <p>After going abroad I came back with specific ideas about my plans for the future, but life, as it does, threw me for a loop once, or twice. <br />
       In this period I took classes in Physics, Chemistry and Biology, deepening my love for the scientific thought process, but ultimately failing to find my calling.
-      First contact to the world of software engineering was made here, while writing first Python Scripts for data evaluation.
+      I also started coding in this period, mostly writing Python scripts for data evaluation.
     </p>,
   },
 ];
@@ -236,18 +230,10 @@ export const experience: TimelineItem[] = [
     title: 'Business & Information Technology - System Administrator',
     content: (
       <p>
-        From a student job at Selter, where I was supposed to support production management, but , I got offered the opportunity to dually study Business & Information Technology
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        From a student job at Selter, where I was supposed to support production management, I got offered the opportunity to dually study Business & Information Technology,
+        after my tasks there had shifted from supporting duties to programming Python and VBA scripts to automate data processing tasks.<br/>
+        Now I mainly work on producing micro applications (Java or Node) for a variety of tasks,<br />
+        or get tasked with the organisation and implementation of structural changes to the administrative processes of procuction management.   
       </p>
     ),
   },
@@ -285,7 +271,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Contact',
-  description: 'You can reach me here. Normally I`ll get back to you in 1-2 days.',
+  description: 'This is where you`ll reach me:',
   items: [
     {
       type: ContactType.Email,
