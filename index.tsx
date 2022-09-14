@@ -3,7 +3,7 @@ import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
-import Contact from '../components/Sections/Contact';
+//import Contact from '../components/Sections/Contact';
 import Footer from '../components/Sections/Footer';
 import Hero from '../components/Sections/Hero';
 //import Portfolio from '../components/Sections/Portfolio';
@@ -14,8 +14,8 @@ import Resume from '../components/Sections/Resume';
 const Header = dynamic(() => import('../components/Sections/Header'), {ssr: false});
 
 const Home: FC = memo(() => {
-  const title = 'React Resume Template';
-  const description = "Example site built with Tim Baker's react resume template";
+  const title = 'Resume Dominik Heyer';
+  const description = "";
 
   return (
     <Page description={description} title={title}>
@@ -25,7 +25,7 @@ const Home: FC = memo(() => {
       <Resume />
       {/*<Portfolio />*/}
       {/*<Testimonials />*/}
-      <Contact />
+      {/*<Contact />*/}
       <Footer />
     </Page>
   );
