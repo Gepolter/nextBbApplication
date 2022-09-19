@@ -1,7 +1,9 @@
 /* eslint-env node */
 
-// https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
+// https://gepolter.github.io/nextBbApplication/
+const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
+  assetPrefix: isProd ? '/nextBbApplication/' : '',
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
@@ -28,8 +30,18 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   images: {
-    domains: ['images.unsplash.com', 'source.unsplash.com'],
+    unoptimized: true,
   },
 };
 
 module.exports = nextConfig;
+
+// next.config.js
+
+
+module.exports = {
+  
+  images: {
+    unoptimized: true,
+  },
+}
