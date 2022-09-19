@@ -215,7 +215,7 @@ export const education: TimelineItem[] = [
   {
     date: 'September 2014 - June 2020',
     location: 'Ruhr-Universität Bochum',
-    title: 'The Curiousity Years',
+    title: 'The Curiosity Years',
     content: <p>After going abroad I came back with specific ideas about my plans for the future, but life, as it does, threw me for a loop once, or twice. <br />
       In this period I took classes in Physics, Chemistry and Biology, deepening my love for the scientific thought process, but ultimately failing to find my calling.
       I also started coding in this period, mostly writing Python scripts for data evaluation.
