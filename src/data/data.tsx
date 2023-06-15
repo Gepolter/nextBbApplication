@@ -71,7 +71,8 @@ export const heroData: Hero = {
         I'm a <strong className="text-stone-100">dual student</strong>, currently studying <strong className="text-stone-100"> IT and Business</strong> at the 
         <strong className="text-stone-100"> IU Dortmund</strong>, while working
         at <a href="https://addi.de/">Selter</a> where I analyse and restructure production and administration processes,
-        and have worked on projects ranging from developing RaspberryPi based hardware solutions for production control,
+        and have worked on projects ranging from the fullstack development of a controlling tool for visualizing my employers KPI's,
+        implementing RaspberryPi based hardware solutions for production control,
         to designing an algorithm for batch and container size selection regarding production bottlenecks and storage optimization.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -148,16 +149,12 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
-        level: 5,
-      },
-      {
         name: 'Express',
         level: 6,
       },
       {
-        name: 'Mongo DB',
-        level: 4,
+        name: 'Mongo DB with mongoose',
+        level: 6,
       },
       {
         name: 'MySQL',
@@ -166,19 +163,23 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Others',
+    name: 'Data Science',
     skills: [
       {
-        name: 'Webscraper - Cheerio',
+        name: 'Python DS Basics (Pandas, pyplot, seaborn)',
         level: 5,
       },
       {
-        name: 'Python/Pandas',
-        level: 4,
+        name: 'scikit-learn',
+        level: 7,
       },
       {
-        name: 'Java / Swing',
-        level: 7,
+        name: 'Knime',
+        level: 6
+      },
+      {
+        name: 'Webscraping - Cheerio',
+        level: 4,
       },
     ],
   },
