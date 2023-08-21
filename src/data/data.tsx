@@ -25,7 +25,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  //TestimonialSection,
+  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -54,7 +54,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  //Testimonials: 'testimonials',
+  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -76,7 +76,7 @@ export const heroData: Hero = {
         to designing an algorithm for batch and container size selection regarding production bottlenecks and storage optimization.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my spare time you can catch me developing the most niche Web Applications like the <a href="https://mhbuildpawcessor.com/">Pawcessor</a>,
+        In my spare time you can catch me developing the most niche web applications like the <a href="https://mhbuildpawcessor.com/">Pawcessor</a> (here is some <a href="https://www.reddit.com/user/dome2394/comments/wanhha/may_i_present_to_you_the_build_pawcessor_the/">release feedback</a> of the beta for the 99.9% of people this sounds outlandish to), 
         playing <strong className="text-stone-100">Guitar</strong>, or exploring the new <strong className="text-stone-100">JavaScript Frontend Framework</strong> of the week.
         And if there's still time, I'll probably prepare the next <strong className="text-stone-100">DnD session</strong> for my wife and friends.
       </p>
@@ -107,9 +107,9 @@ export const aboutData: About = {
   description: ``,
   aboutItems: [
     {label: 'Location', text: 'Altena, Germany', Icon: MapIcon},
-    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Age', text: '28', Icon: CalendarIcon},
     {label: 'Nationality', text: 'German', Icon: FlagIcon},
-    {label: 'Interests', text: 'Traveling, Learning, Literature, DnD, Guitar', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Traveling, Learning,, Coding, Literature, DnD, Gaming, Guitar', Icon: SparklesIcon},
     {label: 'Study', text: 'IU Dortmund', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Selter GmbH & co. KG', Icon: OfficeBuildingIcon},
   ],
@@ -137,11 +137,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Vue',
-        level: 8,
+        level: 9,
       },
       {
         name: 'React',
-        level: 5,
+        level: 4,
       },
     ],
   },
@@ -154,7 +154,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Mongo DB with mongoose',
-        level: 6,
+        level: 8,
       },
       {
         name: 'MySQL',
@@ -166,16 +166,16 @@ export const skills: SkillGroup[] = [
     name: 'Data Science',
     skills: [
       {
-        name: 'Python DS Basics (Pandas, pyplot, seaborn)',
-        level: 5,
+        name: 'Python Basics (Pandas, pyplot, seaborn)',
+        level: 6,
       },
       {
         name: 'scikit-learn',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Knime',
-        level: 6
+        level: 7
       },
       {
         name: 'Webscraping - Cheerio',
@@ -232,7 +232,7 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         From a student job at Selter, where I was supposed to support production management, I got offered the opportunity to dually study Business & Information Technology,
-        after my tasks there had shifted from supporting duties to programming Python and VBA scripts to automate data processing tasks.<br/>
+        after my tasks there had shifted from supporting duties to programming python and VBA scripts to automate data processing tasks.<br/>
         Now I mainly work on producing micro applications (Java or Node) for a variety of tasks,<br />
         or get tasked with the organisation and implementation of structural changes to the administrative processes of procuction management.   
       </p>
@@ -243,9 +243,9 @@ export const experience: TimelineItem[] = [
 /**
  * Testimonial section
  */
-/*
+
 export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
+  imageSrc: heroImage,
   testimonials: [
     {
       name: 'John Doe',
@@ -264,7 +264,7 @@ export const testimonial: TestimonialSection = {
     },
   ],
 };
-*/
+
 
 /**
  * Contact section
@@ -284,13 +284,6 @@ export const contact: ContactSection = {
       text: 'Altena, Germany',
       href: 'https://goo.gl/maps/PATKDx912uT6vwko9',
     },
-    /*
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    */
     {
       type: ContactType.Github,
       text: 'Gepolter',
