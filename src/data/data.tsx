@@ -77,7 +77,7 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my spare time you can catch me developing the most niche web applications like the <a href="https://mhbuildpawcessor.com/">Pawcessor</a>, 
-        dabbling in <a href="https://www.kaggle.com/code/gepolter/fork-of-data-science-case-study-wip">data science</a>, playing <strong className="text-stone-100">Guitar</strong>, or exploring the new <strong className="text-stone-100">JavaScript Frontend Framework</strong> of the week.
+        dabbling in <a href="https://www.kaggle.com/code/gepolter/data-science-case-study-wip/notebook">data science</a>, playing <strong className="text-stone-100">Guitar</strong>, or exploring the new <strong className="text-stone-100">JavaScript Frontend Framework</strong> of the week.
         And if there's still time, I'll probably prepare the next <strong className="text-stone-100">DnD session</strong> for my wife and friends.
       </p>
     </>
